@@ -11,6 +11,7 @@ while True:
         break
 
     if user_input not in options:
+        print("Try again dingus!")
         continue
 
     random_number = random.randint(0, 4)
