@@ -6,7 +6,7 @@ if play.lower() != "yes":
     quit()
 print("Lets have some fun!!!")
 
-score = 0
+
 questions = ("What symbol is used for addition? ",
              "What symbol is used for subtraction? ",
              "What symbol is used for multiplication? ",
@@ -27,13 +27,13 @@ options = (("A. +", "B. -", "C. *", "D. /"),
            ("A. +=", "B. -=", "C. <=", "D. >="),
            ("A. +=", "B. -=", "C. <=", "D. >="))
 
-answers = ("A", "B", "C", "D", "B", "A", "D", "D","C")
+answers = ("A", "B", "C", "D", "B", "A", "D", "D", "C")
 guesses = []
 score = 0
 question_num = 0
 
 for question in questions:
-    print("----------------------")
+    print("<><><><><><><><><><><>")
     print(question)
     for option in options[question_num]:
         print(option)
@@ -48,9 +48,9 @@ for question in questions:
         print(f"{answers[question_num]} is the correct answer")
     question_num += 1
 
-print("----------------------")
+print(">>>>>>>>>>>>>>>>>>>>>>")
 print("       RESULTS        ")
-print("----------------------")
+print("<<<<<<<<<<<<<<<<<<<<<<")
 
 print("answers: ", end="")
 for answer in answers:
