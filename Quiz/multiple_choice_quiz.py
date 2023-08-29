@@ -1,4 +1,5 @@
 # multiple_choice_quiz
+import time
 
 play = input("Do you want to play a game? ")
 
@@ -64,3 +65,4 @@ print()
 
 score = int(score / len(questions) * 100)
 print(f"Your score is: {score}%")
+time.sleep(20)

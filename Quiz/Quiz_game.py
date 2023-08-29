@@ -1,4 +1,5 @@
 # Quiz game
+import time
 
 play = input("Do you want to play a game? ")
 
@@ -88,4 +89,6 @@ if answer.lower() == "yes":
 else:
     print("Sorry, that was incorrect.")
 
-print("Your score is", score, "out of", count)
+score = int((score/count)*100)
+print(f"Your score is: {score}%")
+time.sleep(20)
