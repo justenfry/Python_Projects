@@ -77,13 +77,15 @@ while run == True:
                 total += 1
 
     elif User_input == 5:
+        print(Ra, 'to the power of 2')
         answer = Ra ** 2
         user_answer = int(input())
         if user_answer == 9999:
             run = False
-        elif user_answer == answer:
+        elif user_answer == round(answer,2):
+            print("Correct!")
             score += 1
-            total += 1 
+            total += 1
         else:
                 print('Wrong! the correct answer is', answer)
                 total += 1
